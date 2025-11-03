@@ -54,9 +54,8 @@
         }
     </script>
 </head>
-<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-500">
-
-<header class="sticky top-0 bg-white dark:bg-gray-800 shadow-lg dark:shadow-xl z-50 transition-colors duration-500">
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-500 transition-colors duration-500">
+<header class="sticky top-0 bg-white dark:bg-gray-800 dark:shadow-xl dark:border-0 border-2 border-gray-200 z-50 transition-colors duration-500">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20"> 
             
@@ -67,13 +66,13 @@
             </div>
 
             <div class="hidden md:flex items-center ml-4 flex-grow max-w-sm">
-                <div class="flex w-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-sm">
+                <div class="flex w-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-700 rounded-md overflow-hidden">
                     <div class="flex items-center px-3 py-2 flex-grow">
                         <svg class="h-5 w-5 text-gray-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                         </svg>
                         <input type="text" placeholder="Want to learn?"
-                            class="focus:outline-none w-full text-gray-700 dark:text-gray-300 dark:bg-gray-700 placeholder-gray-500">
+                            class="focus:outline-none w-full text-gray-700 dark:text-gray-500 dark:bg-gray-700 placeholder-gray-500">
                     </div>
                     <button class="flex items-center px-4 py-2 bg-blue-600 text-white font-medium whitespace-nowrap
                         transition duration-150 ease-in-out hover:bg-blue-700">
@@ -83,14 +82,14 @@
             </div>
 
             <div class="hidden md:flex items-center flex-nowrap space-x-6">
-                <a href="#" class="text-gray-600 dark:text-gray-300 font-medium transition hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap">Home</a>
-                <a href="#" class="text-gray-600 dark:text-gray-300 font-medium transition hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap">Courses</a>
-                <a href="#" class="text-blue-600 dark:text-blue-400 font-bold transition hover:text-blue-700 dark:hover:text-blue-300 whitespace-nowrap">About</a>
-                <a href="#" class="text-gray-600 dark:text-gray-300 font-medium transition hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap">Contact Us</a>
-                <a href="#" class="text-blue-600 dark:text-blue-400 font-medium transition hover:text-blue-700 dark:hover:text-blue-300 whitespace-nowrap">Sign in</a>
-                <a href="#" class="px-4 py-2 text-sm font-medium rounded-full text-white bg-blue-600 hover:bg-blue-700
-                    transition shadow-lg whitespace-nowrap">
-                    Create account
+                <a href="../index.html" class="text-gray-600 dark:text-gray-300 font-medium transition hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap">Home</a>
+                <a href="./pages/Courses.html" class="text-gray-600 dark:text-gray-300 font-medium transition hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap">Courses</a>
+                <a href="./pages/about.html" class="text-blue-600 dark:text-blue-600 font-bold transition hover:text-blue-700 dark:hover:text-blue-300 whitespace-nowrap">About</a>
+                <a href="./pages/Contact.html" class="text-gray-600 dark:text-gray-300 font-medium transition hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap">Contact Us</a>
+                <a href="./pages/form_Login.html" class="text-blue-600 dark:text-blue-400 font-medium transition hover:text-blue-700 dark:hover:text-blue-300 whitespace-nowrap">Sign in</a>
+                <a href="./pages/form_Signup.html" class="px-4 py-2 text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700
+                    transition whitespace-nowrap">
+                    Register
                 </a>
                 
                 <button id="theme-toggle-desktop" class="bg-gray-100 dark:bg-gray-700 rounded-full p-2 shadow-inner dark:shadow-none flex items-center justify-center flex-shrink-0 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 transition" aria-label="Toggle theme">
@@ -101,6 +100,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
                     </svg>
                 </button>
+
             </div>
 
             <div class="md:hidden flex items-center space-x-2">
@@ -124,10 +124,11 @@
         </div>
     </nav>
 
+
     <div id="mobile-menu" class="md:hidden hidden bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
         <div class="px-4 pt-2 pb-4 space-y-3">
             <div class="mb-3">
-                <div class="flex border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm">
+                <div class="flex border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
                     <div class="flex items-center px-3 py-2 flex-grow">
                         <svg class="h-5 w-5 text-gray-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
@@ -136,18 +137,18 @@
                             class="focus:outline-none w-full text-gray-700 dark:text-gray-300 dark:bg-gray-700 placeholder-gray-500">
                     </div>
                     <button class="px-3 py-2 bg-blue-50 text-blue-600 font-medium hover:bg-blue-100 dark:bg-blue-900 dark:text-blue-300 dark:hover:bg-blue-800 transition duration-150 ease-in-out">
-                        Explore
+                        <a href="./pages/Courses.html">Explore</a>
                     </button>
                 </div>
             </div>
 
-            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Home</a>
-            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Courses</a>
-            <a href="#" class="block px-3 py-2 rounded-md text-base font-bold text-blue-600 dark:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700">About</a>
-            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Contact Us</a>
-            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-blue-600 dark:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700">Sign in</a>
-            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-600 hover:bg-blue-700 text-center shadow-md">
-                Create account
+            <a href="../index.html" class="block px-3 py-2 rounded-md text-base font-medium text-blue-600 dark:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700">Home</a>
+            <a href="./pages/Courses.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Courses</a>
+            <a href="./pages/about.html" class="block px-3 py-2 rounded-md text-base font-bold text-blue-600 dark:text-blue-40 hover:bg-gray-100 dark:hover:bg-gray-700">About</a>
+            <a href="./pages/Contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Contact Us</a>
+            <a href="./pages/form_Login.html" class="block px-3 py-2 rounded-md text-base font-medium text-blue-600 dark:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700">Sign in</a>
+            <a href="./pages/form_Signup.html" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-600 hover:bg-blue-700 text-center shadow-md">
+                Register
             </a>
         </div>
     </div>
@@ -236,10 +237,10 @@
 </div>
 
 <section class="max-w-6xl mx-auto px-4 sm:px-8 md:px-12 py-16 text-center">
-    <h2 class="text-blue-700 dark:text-blue-400 font-bold text-3xl sm:text-4xl md:text-5xl mb-6">Welcome to ISTAD</h2>
+    <h2 class="text-blue-700 dark:text-blue-400 font-bold text-3xl sm:text-4xl md:text-5xl mb-6">Welcome to E-Academy</h2>
     
-    <p class="text-gray-700 dark:text-gray-300 leading-relaxed max-w-4xl mx-auto text-base sm:text-lg md:text-xl">
-        At ISTAD, we believe in accessible, innovative learning experiences that adapt to your schedule and learning style.
+    <p class="text-gray-700 dark:text-gray-500 leading-relaxed max-w-4xl mx-auto text-base sm:text-lg md:text-xl">
+        At E-Academy, we believe in accessible, innovative learning experiences that adapt to your schedule and learning style.
             Join us in embracing the future of education and unlock your potential with our immersive online courses.
             Welcome to ISTAD, where learning knows no boundaries.
             Our mission is to empower individuals worldwide through accessible and innovative education.
@@ -253,7 +254,7 @@
         <h1 class="text-3xl sm:text-4xl font-bold mb-6 leading-tight text-gray-900 dark:text-white">
             <span class="text-blue-700 dark:text-blue-400">WEEKEND UX</span> providing the best opportunities to students around the globe.
         </h1>
-        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 text-base sm:text-lg">
+        <p class="text-gray-700 dark:text-gray-500 leading-relaxed mb-6 text-base sm:text-lg">
            Enjoy UX Skills is a UI/UX Design Academy in Phnom Penh that deals with user experience and training, user interface, and consulting.
                 Started in 2023, we’re passionate about user interface design / user experience design and human-computer interaction design.
                 Humanoid aims to help you gain deep knowledge and skills in UI/UX design for your golden future.
@@ -261,11 +262,11 @@
     </div>
 
     <div class="flex flex-col md:flex-row lg:flex-col gap-4 items-center">
-            <div class="bg-gray-100 dark:bg-gray-800 rounded-xl p-3 w-full shadow-md">
+            <div class="bg-gray-100 dark:bg-gray-800 rounded-xl p-3 w-full">
                 <img src="../images/image copy.png"
                     alt="UI/UX Image 1"
                     class="rounded-xl object-cover w-full h-48 sm:h-56"> </div>
-            <div class="bg-gray-100 dark:bg-gray-800 rounded-xl p-3 w-full shadow-md">
+            <div class="bg-gray-100 dark:bg-gray-800 rounded-xl p-3 w-full">
                 <img src="../images/image.png"
                     alt="UI/UX Image 2"
                     class="rounded-xl object-cover w-full h-48 sm:h-56"> </div>
@@ -276,7 +277,7 @@
 <hr class="max-w-6xl mx-auto border-gray-200 dark:border-gray-700">
 
 <section class="max-w-6xl mx-auto px-4 sm:px-8 md:px-12 py-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 flex items-start space-x-4 transition-shadow duration-300">
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-6 flex items-start space-x-4 transition-shadow duration-300">
             <div class="text-blue-600 text-3xl">💡</div>
             <div>
                 <h3 class="font-semibold text-lg text-gray-800 dark:text-gray-100 mb-1">Our Vision</h3>
@@ -287,7 +288,7 @@
             </div>
         </div>
 
-        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 flex items-start space-x-4 transition-shadow duration-300">
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-6 flex items-start space-x-4 transition-shadow duration-300">
             <div class="text-blue-600 text-3xl">✅</div>
             <div>
                 <h3 class="font-semibold text-lg text-gray-800 dark:text-gray-100 mb-1">Commitment to Excellence</h3>
@@ -300,7 +301,7 @@
     </section>
 
     <section class="max-w-6xl mx-auto px-4 sm:px-8 md:px-12 py-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 flex items-start space-x-4 transition-shadow duration-300">
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-6 flex items-start space-x-4 transition-shadow duration-300">
             <div class="text-blue-600 text-3xl">🚀</div>
             <div>
                 <h3 class="font-semibold text-lg text-gray-800 dark:text-gray-100 mb-1">Empowering Learners</h3>
@@ -311,7 +312,7 @@
             </div>
         </div>
 
-        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 flex items-start space-x-4 transition-shadow duration-300">
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-6 flex items-start space-x-4 transition-shadow duration-300">
             <div class="text-blue-600 text-3xl">⚙️</div>
             <div>
                 <h3 class="font-semibold text-lg text-gray-800 dark:text-gray-100 mb-1">Innovation in Learning</h3>
@@ -324,9 +325,9 @@
     </section>
 
     <section class="max-w-6xl mx-auto px-4 sm:px-8 md:px-12 py-10">
-        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 sm:p-8 space-y-6 transition-shadow duration-300"> <div>
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-6 sm:p-8 space-y-6 transition-shadow duration-300"> <div>
                 <h3 class="font-semibold text-blue-700 dark:text-blue-400 text-xl">Community-Centric Approach</h3>
-                <p class="text-gray-700 dark:text-gray-300 text-sm sm:text-base leading-relaxed">
+                <p class="text-gray-700 dark:text-gray-500 text-sm sm:text-base leading-relaxed">
                     ISTAD is more than just courses — it's a vibrant community. We encourage collaboration, discussion, and knowledge sharing among learners,
                     fostering growth and camaraderie.
                 </p>
@@ -335,7 +336,7 @@
 
             <div>
                 <h3 class="font-semibold text-blue-700 dark:text-blue-400 text-xl">Diverse and Inclusive Education</h3>
-                <p class="text-gray-700 dark:text-gray-300 text-sm sm:text-base leading-relaxed">
+                <p class="text-gray-700 dark:text-gray-500 text-sm sm:text-base leading-relaxed">
                     We celebrate diversity in perspectives, cultures, and ideas. Our courses cater to various interests and skill levels, ensuring everyone finds a suitable learning path.
                 </p>
                 <div class="border-b border-blue-700 dark:border-blue-500 mt-3 w-1/2 sm:w-2/3"></div>
@@ -343,7 +344,7 @@
 
             <div>
                 <h3 class="font-semibold text-blue-700 dark:text-blue-400 text-xl">Continuous Improvement</h3>
-                <p class="text-gray-700 dark:text-gray-300 text-sm sm:text-base leading-relaxed">
+                <p class="text-gray-700 dark:text-gray-500 text-sm sm:text-base leading-relaxed">
                     We are always evolving. Learner feedback helps us enhance our platform, ensuring it remains dynamic and responsive to user needs.
                 </p>
             </div>
@@ -352,7 +353,7 @@
 
 <div class="text-center py-12 bg-gray-100 dark:bg-gray-800 transition-colors duration-500">
     <p class="text-lg text-gray-700 dark:text-gray-400 mb-4 italic">“Thank you for being part of ISTAD. Together, let's embark on a journey of lifelong learning and growth.”</p>
-    <a href="#" class="bg-blue-600 text-white px-10 py-4 rounded-full font-semibold hover:bg-blue-700 transition shadow-lg text-lg">
+    <a href="#" class="bg-blue-600 text-white px-10 py-4 rounded-full font-semibold hover:bg-blue-700 transition text-lg">
         Join our community here 🌟
     </a>
 </div>

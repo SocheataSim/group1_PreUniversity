@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="E-Academy Modern E-Learning Platform">
@@ -18,15 +17,17 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
           darkMode: 'class',
         }
     </script>
-</head>
-<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-500">
 
-<header class="sticky top-0 bg-white dark:bg-gray-800 shadow-lg dark:shadow-xl z-50 transition-colors duration-500">
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-500">
+
+<header class="sticky top-0 bg-white dark:bg-gray-800 dark:shadow-xl dark:border-0 border-2 border-gray-200 z-50 transition-colors duration-500">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20"> 
             
@@ -37,7 +38,7 @@
             </div>
 
             <div class="hidden md:flex items-center ml-4 flex-grow max-w-sm">
-                <div class="flex w-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-sm">
+                <div class="flex w-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-700 rounded-md overflow-hidden">
                     <div class="flex items-center px-3 py-2 flex-grow">
                         <svg class="h-5 w-5 text-gray-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
@@ -53,14 +54,14 @@
             </div>
 
             <div class="hidden md:flex items-center flex-nowrap space-x-6">
-                <a href="#" class="text-gray-600 dark:text-gray-300 font-medium transition hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap">Home</a>
-                <a href="#" class="text-gray-600 dark:text-gray-300 font-medium transition hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap">Courses</a>
-                <a href="#" class="text-blue-600 dark:text-blue-400 font-bold transition hover:text-blue-700 dark:hover:text-blue-300 whitespace-nowrap">About</a>
-                <a href="#" class="text-gray-600 dark:text-gray-300 font-medium transition hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap">Contact Us</a>
-                <a href="#" class="text-blue-600 dark:text-blue-400 font-medium transition hover:text-blue-700 dark:hover:text-blue-300 whitespace-nowrap">Sign in</a>
-                <a href="#" class="px-4 py-2 text-sm font-medium rounded-full text-white bg-blue-600 hover:bg-blue-700
-                    transition shadow-lg whitespace-nowrap">
-                    Create account
+                <a href="#" class="text-blue-600 dark:text-blue-600 font-medium transition hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap">Home</a>
+                <a href="./pages/Courses.html" class="text-gray-600 dark:text-gray-300 font-medium transition hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap">Courses</a>
+                <a href="./pages/about.html" class="text-gray-600 dark:text-gray-300 font-bold transition hover:text-blue-700 dark:hover:text-blue-300 whitespace-nowrap">About</a>
+                <a href="./pages/Contact.html" class="text-gray-600 dark:text-gray-300 font-medium transition hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap">Contact Us</a>
+                <a href="./pages/form_Login.html" class="text-blue-600 dark:text-blue-400 font-medium transition hover:text-blue-700 dark:hover:text-blue-300 whitespace-nowrap">Sign in</a>
+                <a href="./pages/form_Signup.html" class="px-4 py-2 text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700
+                    transition whitespace-nowrap">
+                    Register
                 </a>
                 
                 <button id="theme-toggle-desktop" class="bg-gray-100 dark:bg-gray-700 rounded-full p-2 shadow-inner dark:shadow-none flex items-center justify-center flex-shrink-0 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 transition" aria-label="Toggle theme">
@@ -95,10 +96,11 @@
         </div>
     </nav>
 
+
     <div id="mobile-menu" class="md:hidden hidden bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
         <div class="px-4 pt-2 pb-4 space-y-3">
             <div class="mb-3">
-                <div class="flex border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm">
+                <div class="flex border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden">
                     <div class="flex items-center px-3 py-2 flex-grow">
                         <svg class="h-5 w-5 text-gray-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
@@ -107,18 +109,18 @@
                             class="focus:outline-none w-full text-gray-700 dark:text-gray-300 dark:bg-gray-700 placeholder-gray-500">
                     </div>
                     <button class="px-3 py-2 bg-blue-50 text-blue-600 font-medium hover:bg-blue-100 dark:bg-blue-900 dark:text-blue-300 dark:hover:bg-blue-800 transition duration-150 ease-in-out">
-                        Explore
+                        <a href="./pages/Courses.html">Explore</a>
                     </button>
                 </div>
             </div>
 
-            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Home</a>
-            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Courses</a>
-            <a href="#" class="block px-3 py-2 rounded-md text-base font-bold text-blue-600 dark:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700">About</a>
-            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Contact Us</a>
-            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-blue-600 dark:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700">Sign in</a>
-            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-600 hover:bg-blue-700 text-center shadow-md">
-                Create account
+            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-blue-600 dark:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700">Home</a>
+            <a href="./pages/Courses.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Courses</a>
+            <a href="./pages/about.html" class="block px-3 py-2 rounded-md text-base font-bold text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">About</a>
+            <a href="./pages/Contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Contact Us</a>
+            <a href="./pages/form_Login.html" class="block px-3 py-2 rounded-md text-base font-medium text-blue-600 dark:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700">Sign in</a>
+            <a href="./pages/form_Signup.html" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-600 hover:bg-blue-700 text-center shadow-md">
+                Register
             </a>
         </div>
     </div>
@@ -210,14 +212,14 @@
                 <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 dark:text-white">
                     Learn <span class="text-[#0661DF]">Job Ready Skills</span> from Free  Online Courses with <span class="text-[#0661DF]">Certificates</span> 
                 </h1>
-                <p class="text-lg text-gray-700 mb-8">
+                <p class="text-lg text-gray-500 mb-8">
                     Discover a world of knowledge at your fingertips. Our e-learning platform offers a wide range of courses in design, technology, and more to help you achieve your learning goals.
                 </p>
                 <div class="flex gap-4">
-                <a href="./pages/about.html" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-150 ease-in-out shadow-md">
+                <a href="./pages/about.html" class="px-6 py-3 bg-blue-600 shadow-xl dark:border-0 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-150 ease-in-out border-2 border-gray-200">
                     Read More
                 </a>
-                <a href="./pages/form_Signup.html" class="px-6 py-3 bg-[#F6F9FF] dark:bg-blue-200 text-[#0661DF] font-semibold rounded-md hover:bg-blue-700 transition duration-150 ease-in-out shadow-md hover:text-white">
+                <a href="./pages/form_Signup.html" class="px-6 py-3 bg-[#F6F9FF] dark:bg-blue-200 shadow-xl dark:border-0 text-[#0661DF] font-semibold rounded-md hover:bg-blue-700 transition duration-150 ease-in-out border-2 border-gray-200 hover:text-white">
                     Join Now
                 </a>  
                 </div>
@@ -250,7 +252,7 @@ Certification on Course, taught by top instructors.
             <h2 class="text-lg md:text-4xl font-medium text-[#0661DF] dark:text-white">
             Why Choose Our E-Learning Platform?
         </h2>
-        <p class="text-lg text-gray-600 mt-2">
+        <p class="text-lg text-gray-500 mt-2">
             Get unlimited access to over 90% of courses, Projects, Specialization, and Professional
 Certification on Course, taught by top instructors.
         </p>
@@ -258,7 +260,7 @@ Certification on Course, taught by top instructors.
         
         <div class="max-w-7xl mx-auto px-4 md:px-8 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-2">
             <!-- Card 1 -->
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <div class="bg-white dark:bg-gray-800 shadow-xl dark:border-0 rounded-lg border-2 border-gray-200 p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                 <!-- Light mode image -->
                 <img src="./images/LearnAnythingImage.jpg" alt="Courses" class="mx-auto mb-4 h-16 w-16 block dark:hidden">
 
@@ -266,27 +268,27 @@ Certification on Course, taught by top instructors.
                 <img src="./images/LearnAnyhtingDarkMode.png" alt="Course" class="mx-auto mb-4 h-16 w-16 hidden dark:block">
 
                 <h3 class="text-xl font-semibold mb-2">Wide Range of Courses</h3>
-                <p class="text-gray-600">Explore a diverse selection of courses in design, technology, and more.</p>
+                <p class="text-gray-500">Explore a diverse selection of courses in design, technology, and more.</p>
                 <a href="#" class="inline-flex items-center text-[#2B6FDC] font-medium transition-colors duration-200 hover:bg-[#F6F9FF] px-4 py-2 rounded">
                     Learn More
                     <i class="fas fa-chevron-right ml-2"></i>
                 </a>
             </div>
             <!-- Card 2 -->
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <div class="bg-white dark:bg-gray-800 shadow-xl dark:border-0 rounded-lg border-2 border-gray-200 p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                 <img  src="./images/flexibleLearningImage.jpg" alt="Flexible Learning"" class="mx-auto mb-4 h-16 w-16 block dark:hidden">
 
                 <!-- Dark mode image -->
                 <img src="./images/FlexibleDarkMode.png" alt="Course" class="mx-auto mb-4 h-16 w-16 hidden dark:block">
                 <h3 class="text-xl font-semibold mb-2">Flexible Learning</h3>
-                <p class="text-gray-600">Learn at your own pace, anytime and anywhere that suits your needs and goals</p>
+                <p class="text-gray-500">Learn at your own pace, anytime and anywhere that suits your needs and goals</p>
                 <a href="#" class="inline-flex items-center text-[#2B6FDC] font-medium transition-colors duration-200 hover:bg-[#F6F9FF] px-4 py-2 rounded">
                     Learn More
                     <i class="fas fa-chevron-right ml-2"></i>
                 </a>
             </div>
             <!-- Card 3 -->
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <div class="bg-white dark:bg-gray-800 shadow-xl dark:border-0 rounded-lg border-2 border-gray-200 p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                 <img  src="./images/savemoneyimage.jpg" alt="Save Money" class="mx-auto mb-4 h-16 w-16 block dark:hidden">
 
                 <!-- Dark mode image -->
@@ -300,13 +302,13 @@ Certification on Course, taught by top instructors.
                 </a>
             </div>
             <!-- Card 4 -->
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <div class="bg-white dark:bg-gray-800 shadow-xl dark:border-0 rounded-lg border-2 border-gray-200 p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                 <img   src="./images/CertificateImage.jpg" alt="Certification" class="mx-auto mb-4 h-16 w-16 block dark:hidden">
 
                 <!-- Dark mode image -->
                 <img src="./images/CertificateDarkMode.png" alt="Course" class="mx-auto mb-4 h-16 w-16 hidden dark:block">
                 <h3 class="text-xl font-semibold mb-2">Certification</h3>
-                <p class="text-gray-600">Earn recognized certificates to highlight your expertise and accelerate your career growth.</p>
+                <p class="text-gray-500">Earn recognized certificates to highlight your expertise and accelerate your career growth.</p>
                 <a href="#" class="inline-flex items-center text-[#2B6FDC] font-medium transition-colors duration-200 hover:bg-[#F6F9FF] px-4 py-2 rounded">
                     Learn More
                     <i class="fas fa-chevron-right ml-2"></i>
@@ -323,14 +325,14 @@ Certification on Course, taught by top instructors.
                 <h2 class="text-blue-600 text-3xl md:text-4xl font-medium mb-4">
                     Our Popular Courses
                 </h2>
-                <p class="text-gray-600 text-base md:text-lg max-w-3xl mx-auto">
+                <p class="text-gray-500 text-base md:text-lg max-w-3xl mx-auto">
                     Discover our carefully curated selection of courses designed to accelerate your career and expand your knowledge.
                 </p>
             </div>
             <!-- Card 1 -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white  hover:shadow-xl duration-300 overflow-hidden
-                rounded-2xl shadow-lg dark:bg-gray-800 transition-all  dark:hover:shadow-blue-500/20">
+                rounded-2xl shadow-xl dark:border-0 border-2 border-gray-200 dark:bg-gray-800 transition-all  dark:hover:shadow-blue-500/20">
                     <div class="relative">
                         <div class="h-60 flex items-center justify-center text-white text-xl p-4">
                             <img src="./images/CourseImage1.jpg" alt="Figma UI UX Design" class="w-full h-full object-cover opacity-80 rounded-xl">
@@ -340,10 +342,10 @@ Certification on Course, taught by top instructors.
                         </span>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-1">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1 dark:text-white">
                             Figma UI UX Design..
                         </h3>
-                        <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                        <p class="text-sm text-gray-500 mb-4 line-clamp-2">
                             Use Figma to get a job in UI Design, User Interface, User Experience design.
                         </p>
 
@@ -352,7 +354,7 @@ Certification on Course, taught by top instructors.
                                 <span class="text-yellow-500 font-bold">4.9</span> 
                                 <span class="text-gray-400">(125)</span>
                             </div>
-                            <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded-full font-medium">
+                            <span class="bg-gray-100 text-gray-500 px-2 py-1 rounded-full font-medium">
                                 Intermediate
                             </span>
                         </div>
@@ -380,7 +382,7 @@ Certification on Course, taught by top instructors.
                 </div>
                 <!-- Card2 -->
                 <div class="bg-white  hover:shadow-xl duration-300 overflow-hidden
-                rounded-2xl shadow-lg dark:bg-gray-800 transition-all  dark:hover:shadow-blue-500/20">
+                rounded-2xl border-2 shadow-xl dark:border-0 border-gray-200 dark:bg-gray-800 transition-all  dark:hover:shadow-blue-500/20">
                     <div class="relative">
                         <div class="h-60 flex items-center justify-center text-white text-xl p-4">
                             <img src="./images/CourseImage2.jpg" alt="Figma UI UX Design" class="w-full h-full object-cover opacity-80 rounded-xl">
@@ -392,10 +394,10 @@ Certification on Course, taught by top instructors.
                     </div>
 
                     <div class="p-6">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-1">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1 dark:text-white">
                             Figma UI UX Design..
                         </h3>
-                        <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                        <p class="text-sm text-gray-500 mb-4 line-clamp-2">
                             Use Figma to get a job in UI Design, User Interface, User Experience design.
                         </p>
 
@@ -404,7 +406,7 @@ Certification on Course, taught by top instructors.
                                 <span class="text-yellow-500 font-bold">4.9</span> 
                                 <span class="text-gray-400">(125)</span>
                             </div>
-                            <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded-full font-medium">
+                            <span class="bg-gray-100 text-gray-500 px-2 py-1 rounded-full font-medium">
                                 Intermediate
                             </span>
                         </div>
@@ -433,7 +435,7 @@ Certification on Course, taught by top instructors.
                     <!-- Card 3 -->
 
                 <div class="bg-white  hover:shadow-xl duration-300 overflow-hidden
-                rounded-2xl shadow-lg dark:bg-gray-800 transition-all  dark:hover:shadow-blue-500/20">
+                rounded-2xl border-2 shadow-xl dark:border-0 border-gray-200 dark:bg-gray-800 transition-all  dark:hover:shadow-blue-500/20">
                     <div class="relative">
                         <div class="h-60 flex items-center justify-center text-white text-xl p-4">
                             <img src="./images/courseImage3.jpg" alt="Figma UI UX Design" class="w-full h-full object-cover opacity-80 rounded-xl">
@@ -445,10 +447,10 @@ Certification on Course, taught by top instructors.
                     </div>
 
                     <div class="p-6">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-1">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1 dark:text-white">
                             Figma UI UX Design..
                         </h3>
-                        <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                        <p class="text-sm text-gray-500 mb-4 line-clamp-2">
                             Use Figma to get a job in UI Design, User Interface, User Experience design.
                         </p>
 
@@ -457,7 +459,7 @@ Certification on Course, taught by top instructors.
                                 <span class="text-yellow-500 font-bold">4.9</span> 
                                 <span class="text-gray-400">(125)</span>
                             </div>
-                            <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded-full font-medium">
+                            <span class="bg-gray-100 text-gray-500 px-2 py-1 rounded-full font-medium">
                                 Intermediate
                             </span>
                         </div>
@@ -501,38 +503,34 @@ Certification on Course, taught by top instructors.
             <!-- Left Column -->
             <div class="flex flex-col gap-6">
                 <!-- Card 1 -->
-                <div class="bg-white rounded-2xl shadow-lg dark:bg-gray-800 
+                <div class="bg-white shadow-xl dark:border-0 rounded-2xl border-2 border-gray-200 dark:bg-gray-800 
                 p-6 flex flex-col md:flex-row items-center md:items-start gap-6 
                 transition-all duration-300 
-                hover:shadow-xl dark:hover:shadow-blue-500/20">
-                    <div class="w-auto">
-                    <img src="./images/ActivitiesImage.jpg" alt="Educational Seminar" >
-                    </div>
+                hover:shadow-xl dark:hover:shadow-blue-500/20 h-full">
+                    <img class="" src="./images/ActivitiesImage8.png" alt="Educational Seminar" width="335px" height="223px">
                     <div class="text-center md:text-left flex flex-col">
-                        <div class="text-[#0661DF] dark:text-gray-300">
+                        <div class="text-[#0661DF] dark:text-gray-500">
                         <p>
-                            <time datetime="2025-10-09" class="text-blue-600">October 9, 2025</time> 
+                            <time datetime="2025-10-09" class="text-blue-600">October 11, 2025</time> 
                         </p>
                         </div>
                         <h4 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-                        Student Orientation
+                        Educational Seminar
                         </h4>
-                        <p class="text-gray-700 dark:text-gray-300">
-                        E-Academy held an Opening Ceremony for the 5th Batch of Digital Technology Scholarship (Pre-University) students for the 2025 academic year.
+                        <p class="text-gray-500">
+                         ISTAD held a seminar on “Advantages and Disadvantages of Students Working While Studying and Aligning Skills for Career Goals.” was led by Mr. Chin Phearum, Director of ISTAD.
                         </p>
                     </div>
                 </div>
 
             <!-- Card 2 -->
-                    <div class="bg-white rounded-2xl shadow-lg dark:bg-gray-800 
+                    <div class="bg-white shadow-xl dark:border-0 rounded-2xl border-2 border-gray-200 dark:bg-gray-800 
                     p-6 flex flex-col md:flex-row items-center md:items-start gap-6 
                     transition-all duration-300 
-                    hover:shadow-xl dark:hover:shadow-blue-500/20">
-                        <div class="w-auto">
-                        <img src="./images/ActivitiesImage2.jpg" alt="Educational Seminar" >
-                        </div>
+                    hover:shadow-xl dark:hover:shadow-blue-500/20 h-full">
+                        <img src="./images/ActivitiesImage2.jpg" alt="Educational Seminar" width="335px">
                         <div class="text-center md:text-left flex flex-col">
-                            <div class="text-[#0661DF] dark:text-gray-300">
+                            <div class="text-[#0661DF] dark:text-gray-500">
                             <p>
                                 <time datetime="2025-10-09" class="text-blue-600">October 9, 2025</time> 
                             </p>
@@ -540,7 +538,7 @@ Certification on Course, taught by top instructors.
                             <h4 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">
                             Educational Seminar
                             </h4>
-                            <p class="text-gray-700 dark:text-gray-300">
+                            <p class="text-gray-600 dark:text-gray-500">
                             On October 9, 2025, E-Academy organized a seminar titled “My Journey in IT: From Student to Professional.”
                             </p>
                         </div>
@@ -549,46 +547,43 @@ Certification on Course, taught by top instructors.
                 
                 <div class="flex flex-col gap-6">
                     <!-- Card 3 -->
-                    <div class="bg-white rounded-2xl shadow-lg dark:bg-gray-800 
+                    <div class="bg-white shadow-xl dark:border-0 rounded-2xl border-2 border-gray-200 dark:bg-gray-800 
                 p-6 flex flex-col md:flex-row items-center md:items-start gap-6 
                 transition-all duration-300 
-                hover:shadow-xl dark:hover:shadow-blue-500/20">
-                    <div class="w-auto">
-                    <img src="./images/ActivitiesImage.jpg" alt="Educational Seminar" >
-                    </div>
+                hover:shadow-xl dark:hover:shadow-blue-500/20 h-full">
+        
+                    <img src="./images/activitiesImage4.jpg" alt="Closing Ceremony" width="335px">
+                    
                     <div class="text-center md:text-left flex flex-col">
-                        <div class="text-[#0661DF] dark:text-gray-300">
+                        <div class="text-[#0661DF] dark:text-gray-500">
                         <p>
-                            <time datetime="2025-10-09" class="text-blue-600">October 9, 2025</time> 
+                            <time datetime="2025-10-25" class="text-blue-600">October 25, 2025</time> 
                         </p>
                         </div>
                         <h4 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">
                         Student Orientation
                         </h4>
-                        <p class="text-gray-700 dark:text-gray-300">
-                        E-Academy held an Opening Ceremony for the 5th Batch of Digital Technology Scholarship (Pre-University) students for the 2025 academic year.
-                        </p>
+                        <p class="text-gray-600 dark:text-gray-500">
+                       ISTAD held the closing ceremony for its 4th Foundation Scholarship Program, celebrating students’ completion of Web Design and Java Programming courses.
                     </div>
                     </div>
                     <!-- card 4 -->
-                    <div class="bg-white rounded-2xl shadow-lg dark:bg-gray-800 
+                    <div class="bg-white shadow-xl dark:border-0 rounded-2xl border-2 border-gray-200 dark:bg-gray-800 
                     p-6 flex flex-col md:flex-row items-center md:items-start gap-6 
                     transition-all duration-300 
-                    hover:shadow-xl dark:hover:shadow-blue-500/20">
-                        <div class="w-auto">
-                        <img src="./images/ActivitiesImage2.jpg" alt="Educational Seminar" >
-                        </div>
+                    hover:shadow-xl dark:hover:shadow-blue-500/20 h-full">
+                        <img src="./images/ActivitiesImage6.jpg" alt="Educational Seminar" width="335px" >
                         <div class="text-center md:text-left flex flex-col">
-                            <div class="text-[#0661DF] dark:text-gray-300">
+                            <div class="text-[#0661DF] dark:text-gray-500">
                             <p>
-                                <time datetime="2025-10-09" class="text-blue-600">October 9, 2025</time> 
+                                <time datetime="2025-10-6" class="text-blue-600">October 6-7, 2025</time> 
                             </p>
                             </div>
                             <h4 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">
                             Educational Seminar
                             </h4>
-                            <p class="text-gray-700 dark:text-gray-300">
-                            On October 9, 2025, E-Academy organized a seminar titled “My Journey in IT: From Student to Professional.”
+                            <p class="text-gray-600 dark:text-gray-500">
+                            ISTAD organized an online seminar on choosing IT majors and preparing for postgraduate scholarship opportunities. The session featured ISTAD alumni who are currently pursuing PhD studies in South Korea.
                             </p>
                         </div>
                     </div>
@@ -616,12 +611,12 @@ Certification on Course, taught by top instructors.
         <div class="mx-auto w-[90%] md:w-[85%] lg:w-4/5 mt-8 px-4">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                 <!-- student1 -->
-                <div class="p-4 md:p-6 bg-[#F6F9FF] dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="p-4 md:p-6 bg-[#F6F9FF] dark:bg-gray-800 rounded-lg shadow-xl dark:border-0 border-2 border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                     <img src="./images/dane-lim.png" alt="Dane Lim" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full object-cover border-4 border-[#2B6FDC] dark:border-blue-400">
                     <div class="mt-4">
                         <h3 class="text-base md:text-lg font-semibold text-center text-gray-800 dark:text-white">Dane Lim</h3>
                         <p class="text-center text-[#2B6FDC] dark:text-blue-400 font-medium text-sm md:text-base mt-1">Fullstack Developer</p>
-                        <p class="text-[#6F7276] dark:text-gray-300 mt-4 text-sm md:text-base leading-relaxed">"Highly recommend E-Academy for IT students. I went from not understanding coding to learning various technologies."</p>
+                        <p class="text-[#6F7276] dark:text-gray-500 mt-4 text-sm md:text-base leading-relaxed">"Highly recommend E-Academy for IT students. I went from not understanding coding to learning various technologies."</p>
                         
                     </div>
                     <div class="flex justify-center mt-21 text-[#2B6FDC] dark:text-blue-400 gap-4">
@@ -631,12 +626,12 @@ Certification on Course, taught by top instructors.
                 </div>
                 
                 <!-- student2 -->
-                <div class="p-4 md:p-6 bg-[#F6F9FF] dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="p-4 md:p-6 bg-[#F6F9FF] dark:bg-gray-800 rounded-lg shadow-xl dark:border-0 border-2 border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                     <img src="./images/sinmany.png" alt="Sin Manny" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full object-cover border-4 border-[#2B6FDC] dark:border-blue-400">
                     <div class="mt-4">
                         <h3 class="text-base md:text-lg font-semibold text-center text-gray-800 dark:text-white">Sin Manny</h3>
                         <p class="text-center text-[#2B6FDC] dark:text-blue-400 font-medium text-sm md:text-base mt-1">Frontend Developer</p>
-                        <p class="text-[#6F7276] dark:text-gray-300 mt-4 text-sm md:text-base leading-relaxed">E-Academy is perfect for developing IT skills. Experienced teachers use effective methods and focus on the latest technologies, making it ideal for starting an IT career.</p>
+                        <p class="text-[#6F7276] dark:text-gray-500 mt-4 text-sm md:text-base leading-relaxed">E-Academy is perfect for developing IT skills. Experienced teachers use effective methods and focus on the latest technologies, making it ideal for starting an IT career.</p>
                         
                     </div>
                     <div class="flex justify-center mt-9 text-[#2B6FDC] dark:text-blue-400 gap-4">
@@ -645,12 +640,12 @@ Certification on Course, taught by top instructors.
                     </div>
                 </div>           
                 <!-- student3 -->
-                <div class="p-4 md:p-6 bg-[#F6F9FF] dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="p-4 md:p-6 bg-[#F6F9FF] dark:bg-gray-800 rounded-lg shadow-xl dark:border-0 border-2 border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                     <img src="./images/helen-leang.png" alt="Leang Helen" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full object-cover border-4 border-[#2B6FDC] dark:border-blue-400">
                     <div class="mt-4">
                         <h3 class="text-base md:text-lg font-semibold text-center text-gray-800 dark:text-white">Leang Helen</h3>
                         <p class="text-center text-[#2B6FDC] dark:text-blue-400 font-medium text-sm md:text-base mt-1">Cybersecurity Officer</p>
-                        <p class="text-[#6F7276] dark:text-gray-300 mt-4 text-sm md:text-base leading-relaxed">E-Academy is perfect for students for your IT journey with friendly mentor, a great environment and you even get to study abroad.</p>
+                        <p class="text-[#6F7276] dark:text-gray-500 mt-4 text-sm md:text-base leading-relaxed">E-Academy is perfect for students for your IT journey with friendly mentor, a great environment and you even get to study abroad.</p>
                         
                     </div>
                     <div class="flex justify-center mt-15 text-[#2B6FDC] dark:text-blue-400 gap-4">
@@ -660,12 +655,12 @@ Certification on Course, taught by top instructors.
                 </div>
                 
                 <!-- student4 -->
-                <div class="p-4 md:p-6 bg-[#F6F9FF] dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="p-4 md:p-6 bg-[#F6F9FF] dark:bg-gray-800 rounded-lg shadow-xl dark:border-0 border-2 border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                     <img src="./images/phon-sobon.jpg" alt="Phon Sobon" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full object-cover border-4 border-[#2B6FDC] dark:border-blue-400">
                     <div class="mt-4">
                         <h3 class="text-base md:text-lg font-semibold text-center text-gray-800 dark:text-white">Phon Sobon</h3>
                         <p class="text-center text-[#2B6FDC] dark:text-blue-400 font-medium text-sm md:text-base mt-1">Data Analytics</p>
-                        <p class="text-[#6F7276] dark:text-gray-300 mt-4 text-sm md:text-base leading-relaxed">At E-Academy, I'm learning IT with great teachers who explain things clearly. The practical projects and fun activities make learning exciting.</p>
+                        <p class="text-[#6F7276] dark:text-gray-500 mt-4 text-sm md:text-base leading-relaxed">At E-Academy, I'm learning IT with great teachers who explain things clearly. The practical projects and fun activities make learning exciting.</p>
                         
                     </div>
                     <div class="flex justify-center mt-15 text-[#2B6FDC] dark:text-blue-400 gap-4">
@@ -677,27 +672,6 @@ Certification on Course, taught by top instructors.
             </div>
         </div>
     </section>
-
-    <!-- <script>
-    
-    // const btn = document.getElementById('mobile-menu-button');
-    // const menu = document.getElementById('mobile-menu');
-
-    btn.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
-
-        const svg = btn.querySelector('svg');
-        if (menu.classList.contains('hidden')) {
-            // Hamburger icon
-            svg.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16"/>`;
-        } else {
-            // Close icon
-            svg.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12"/>`;
-        }
-    });
-    </script> -->
 
     <!-- Footer -->
     <footer class="bg-gray-900  text-gray-300">
