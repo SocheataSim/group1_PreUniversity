@@ -1,0 +1,8 @@
+/* Custom CSS to ensure the background image covers and is positioned well */
+.hero-background {
+    background-image: url('../images/courses_img/Artboard-1-1024x576.jpg'); /* Replace with your desired image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
